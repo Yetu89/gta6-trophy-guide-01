@@ -215,6 +215,8 @@
   },
   {
    "id": 15,
+   "progress_target": 250,
+   "progress_unit": "stunts",
    "name": "Cunning Stunts",
    "description": "Complete 250 Stunts.",
    "grade": "silver",
@@ -225,6 +227,15 @@
    "guide": "From the official description, the count is 250 stunts — the jumps, near-misses and airtime moments the game counts as you drive and ride around Leonida. There is no single spot named in the official list, so build the count naturally while travelling, and use fast vehicles and ramps when you want to farm it. This guide cannot count stunts for you; check the in-game stats.",
    "steps": ["Drive and ride everywhere — stunts count as you play", "Use jumps and ramps to add airtime stunts", "Reach 250 in the in-game stats"],
    "source": {"name": "GTA 6 trophy list — OutpuTLag", "url": "https://outputlag.com/guides/gta-6-trophy-list/"},
+   "locations": [
+    {"label": "Vice-Dale County — 55 stunt jumps", "source": "PlayDay.One / GTABase"},
+    {"label": "Kelly County — 29 stunt jumps", "source": "PlayDay.One / GTABase"},
+    {"label": "Mariana County — 17 stunt jumps", "source": "PlayDay.One / GTABase"},
+    {"label": "Lummox County — 16 stunt jumps", "source": "PlayDay.One / GTABase"},
+    {"label": "Leonard County — 13 stunt jumps", "source": "PlayDay.One / GTABase"},
+    {"label": "Mile Zero Air Station Southeast stunt jump — dirt mound at the southeast fence, a shortcut into the base", "source": "ConsolePCGaming"}
+   ],
+   "locations_note": "Stunt totals reported by PowerPyx / GTABase: 397 stunts in all — 130 stunt jumps, 202 under bridges, 40 knife flights, 25 base jumps; any 300 count for 100%. Find stunt spots via Map > Exploration > Stunt Spots, and track by region under Progress > Activities > Stunts.",
    "roadmap_stage": 4,
    "when_missed": null
   },
@@ -245,6 +256,8 @@
   },
   {
    "id": 17,
+   "progress_target": 42,
+   "progress_unit": "gold medals",
    "name": "The Shootist",
    "description": "Earn a gold medal in all Shooting Range challenges.",
    "grade": "silver",
@@ -255,11 +268,18 @@
    "guide": "From the official description, earn a gold medal in every Shooting Range challenge — PlayStation tracks 42 of them. Practise each range until the gold score is comfortable before moving on; the range is repeatable, so nothing here is missable. Leave the hardest ones until your aim and weapon handling are upgraded.",
    "steps": ["Find a shooting range", "Work through all 42 challenges", "Earn gold on each one"],
    "source": {"name": "GTA 6 trophy list — OutpuTLag", "url": "https://outputlag.com/guides/gta-6-trophy-list/"},
+   "locations": [
+    {"label": "Griffin Shooting Range — north-west Vice City; 6 challenges x 3 gold difficulties = 18 gold medals", "source": "PowerPyx / GTADB"},
+    {"label": "Rodgers Ranch — north-east of Port Gellhorn; 6 challenges x 4 gold difficulties = 24 gold medals", "source": "PowerPyx / GTADB"}
+   ],
+   "locations_note": "Buy a $5 waiver pass from the clerk at each range first — the challenges then appear on the map. Track them under Progress > Activities > Shooting Ranges.",
    "roadmap_stage": 4,
    "when_missed": null
   },
   {
    "id": 18,
+   "progress_target": 14,
+   "progress_unit": "locations",
    "name": "Top Fun",
    "description": "Win a Top Fun Drone Race at every location.",
    "grade": "bronze",
@@ -270,11 +290,14 @@
    "guide": "From the official description, a win is needed at every drone-race location — the list tracks 14 locations. Win one race at each spot; a loss costs nothing but a retry, so race each location until you win before moving on. Because it is an 'at every location' counter, this guide flags it missable in the sense that every location must be cleared.",
    "steps": ["Find a Top Fun drone race", "Win the race at that location", "Repeat until every location has a win"],
    "source": {"name": "GTA 6 trophy list — OutpuTLag", "url": "https://outputlag.com/guides/gta-6-trophy-list/"},
+   "locations_note": "No published list names all 14 locations yet. In-game, Top Fun drone races appear as blue map icons when you are within about 100 m — use Map > Activities > Top Fun Drones to filter them (GTABase). Each location has 3 time trials; the trophy needs one win per location, the 100% checklist needs all 42 trials.",
    "roadmap_stage": 4,
    "when_missed": "Not a one-shot fail, but the trophy needs a win at every one of the 14 locations — clear each location as you find it."
   },
   {
    "id": 19,
+   "progress_target": 20,
+   "progress_unit": "races",
    "name": "Earn Cash, Not Kudos",
    "description": "Win 20 different races.",
    "grade": "bronze",
@@ -365,6 +388,8 @@
   },
   {
    "id": 25,
+   "progress_target": 8,
+   "progress_unit": "strands",
    "name": "Strangers & Freaks",
    "description": "Complete 8 mission strands for strangers across the state of Leonida.",
    "grade": "silver",
@@ -410,6 +435,8 @@
   },
   {
    "id": 28,
+   "progress_target": 18,
+   "progress_unit": "spots",
    "name": "Positive Mental Attitude",
    "description": "Meditate at every spot across Leonida.",
    "grade": "bronze",
@@ -420,6 +447,19 @@
    "guide": "From the official description, meditate at every spot across Leonida — the list tracks 18 meditation spots. Visit each one and meditate there. Because the description says 'every spot', this guide flags it as a completion counter to clear as you go, and keeping a note of which spots are done saves a second sweep.",
    "steps": ["Find a meditation spot", "Meditate there", "Repeat at all 18 spots"],
    "source": {"name": "GTA 6 achievements list — GTAViceCityHub", "url": "https://www.gtavicecityhub.com/achievements"},
+   "locations": [
+    {"label": "Jason's house balcony — Chapter 1, after the mission Down to Earth (Meet Brian); Lucia invites Jason to meditate (reportedly missable)", "source": "Beebom"},
+    {"label": "Smooth Sand — small sandbar on the west coast of Capri, Mariana County, near the Gulf of Leonida", "source": "Beebom"},
+    {"label": "Swamp — Buckskin Swamp, Kelly County, north-west of Vice-Dale County", "source": "Beebom"},
+    {"label": "Camp Moonflower — banks of the Emerald River, Kelly County, north-west of the Swamp spot", "source": "Beebom"},
+    {"label": "Red Rocks — Manifest County, north of Kelly County and south of Lummox County, near train tracks and a highway", "source": "Beebom"},
+    {"label": "Water Wheel — south Moreau, Lummox County, opposite the waterwheel by the degraded paper mill on the river", "source": "Beebom"},
+    {"label": "Jutting Cliff — Mount Kalaga National Park, Lummox County, on a cliff overlooking a tower near a mine", "source": "Beebom"},
+    {"label": "Waterfall — north-west of Tallaloko, Lummox County, on a river with platforms overlooking a waterfall", "source": "Beebom"},
+    {"label": "Seaside — Waning Sands, just east of Leonard County, on the sandy coastal terrain", "source": "Beebom"},
+    {"label": "Ascent — summit of Mount Kalaga, southern Lummox County; only appears on the map after the other spots are done", "source": "Beebom"}
+   ],
+   "locations_note": "Beebom lists 10 spot locations for 18 meditations because most spots count twice — once per character (Jason and Lucia). Other launch-day guides (EGamers.io, HowToVideoGame) warn the count is not fully settled, so check Progress > Collections > Exploration > Meditations in-game. Do the Chapter 1 spot before leaving Chapter 1: the game has no mission replay, and it is unclear whether a missed first meditation locks the trophy.",
    "roadmap_stage": 3,
    "when_missed": "Not a one-shot fail, but the trophy needs every one of the 18 spots — clear each spot as you find it."
   },
@@ -440,6 +480,8 @@
   },
   {
    "id": 30,
+   "progress_target": 3,
+   "progress_unit": "sets",
    "name": "Don't Touch My Deck",
    "description": "Complete 3 Collectible Card sets.",
    "grade": "silver",
@@ -450,11 +492,22 @@
    "guide": "From the official description, complete 3 collectible card sets. Cards are hidden around Leonida, and a set is complete when every card in it is found. Pick cards up as you explore rather than leaving them for one giant sweep — three full sets are needed, and the world is the only source the description names.",
    "steps": ["Pick up collectible cards as you explore", "Finish one full set", "Complete 3 sets in total"],
    "source": {"name": "GTA 6 achievements list — GTAViceCityHub", "url": "https://www.gtavicecityhub.com/achievements"},
+   "locations": [
+    {"label": "Julian Cruz (Gold) — Vice City Flamingos; office board in the building south of Yasmani's shop, Little Cuba", "source": "GTADB"},
+    {"label": "Kyle Lewicki — Vice City Narcos; back corridor of Dynamix Fitness, on a bench, Bayside", "source": "GTADB"},
+    {"label": "Ian Harris (Silver) — Vice City Club De Futbol; orange lifeguard stand on Ocean Beach", "source": "GTADB"},
+    {"label": "Lalo Velasco (Gold) — Liberty City Swingers; garage of the first house east of Capri beach", "source": "GTADB"},
+    {"label": "Victor Maravilla — Los Santos Corkers; fridge in the Starlet Motel kitchen, Port Gellhorn (reportedly inaccessible after Chapter 2)", "source": "GTADB"},
+    {"label": "Vicki — Delights Dancers; office bathroom at the Starlet Motel, Port Gellhorn (reportedly inaccessible after Chapter 2)", "source": "GTADB"}
+   ],
+   "locations_note": "18 sets, 480 cards in all (PowerPyx): Vice City Flamingos 24, Narcos 24, Manatees 24, Club De Futbol 30, Liberty City Swingers 24, Penetrators 24, Wrath 24, Los Santos Corkers 24, Panic 24, Pounders 24, Backyard Wrestling 12, America's Next Top Hooker 24, Delights Dancers 18, Jack of Hearts Dancers 36, Nine1Nine Dancers 36, The Legends of Ratface 36, Right Wing: America's Hero 36, Ed Comics Universe 36. Only 58 individual card locations were publicly documented on launch day (GTADB) — far short of a full set — so use Progress > Collections > Collectible Cards in-game and pick cards up as you explore: outside in yellow phone boxes or tool boxes, inside on surfaces or stuck to walls (PowerPyx). If you are still in Chapter 2, check the two Starlet Motel cards first.",
    "roadmap_stage": 3,
    "when_missed": null
   },
   {
    "id": 31,
+   "progress_target": 100,
+   "progress_unit": "locations",
    "name": "You WAiNKer!",
    "description": "WAiNK It at 100 locations.",
    "grade": "silver",
@@ -465,11 +518,14 @@
    "guide": "From the official description, use the WAiNK feature at 100 locations. The count is the locations, not the uses — a repeat at the same spot adds nothing, so keep moving to new places. This guide flags it as a completion counter: cover new ground steadily and it finishes during normal exploration.",
    "steps": ["Use WAiNK It at a new location", "Move on — repeats at one spot do not count", "Reach 100 locations"],
    "source": {"name": "GTA 6 achievements list — GTAViceCityHub", "url": "https://www.gtavicecityhub.com/achievements"},
+   "locations_note": "WAiNK scans come in four kinds (PowerPyx via GTABase): 31 Landmarks, 35 Curiosities, 23 Sculptures and No Flusher tags — any 100 count. Open the WAiNK app (hold Up on the D-pad, then R1/RB) and scan anything new. No published list names 100 individual scan spots yet.",
    "roadmap_stage": 3,
    "when_missed": "A completion counter — all 100 locations must be covered before 100%."
   },
   {
    "id": 32,
+   "progress_target": 50,
+   "progress_unit": "challenges",
    "name": "One Last Thing",
    "description": "Complete 50 Challenges.",
    "grade": "bronze",
@@ -500,6 +556,8 @@
   },
   {
    "id": 34,
+   "progress_target": 3,
+   "progress_unit": "shops",
    "name": "Retail Therapy",
    "description": "Rob 3 shops back-to-back with your partner without losing your Wanted Level.",
    "grade": "bronze",
@@ -510,11 +568,19 @@
    "guide": "From the official description, rob 3 shops back-to-back with your partner without losing your wanted level. Three shop robberies in a row, partner present, wanted level kept the whole time — if the wanted level drops or the run breaks, the chain resets, so start again. Keep a manual save before you begin (precaution) and pick three shops close together.",
    "steps": ["Save manually first (precaution)", "Rob a shop with your partner, keeping your wanted level", "Rob two more shops back-to-back without losing it"],
    "source": {"name": "PlayStation trophy list via Exophase & PSNProfiles (PlanetGTA6 mirror)", "url": "https://www.planetgta6.com/en/gta-6-trophies/"},
+   "locations": [
+    {"label": "Casa de Empeno — north Vice City; opens after Yasmani's Jewelry Jobs (Chapter 3)", "source": "GTABase / PowerPyx"},
+    {"label": "Richardson Jewelry & Diamonds — north Vice City; opens after Yasmani's Jewelry Jobs (Chapter 3)", "source": "GTABase / PowerPyx"},
+    {"label": "Donovan Banks & Co — north Vice City; opens after Yasmani's Jewelry Jobs (Chapter 3)", "source": "GTABase / PowerPyx"}
+   ],
+   "locations_note": "The same three stores are the Sneakthief targets. Keep the flashing red/blue wanted level (not just heat) through all three shops; the trophy can pop about 30 seconds after the third shop — if it does not, rob a fourth (GTABase).",
    "roadmap_stage": 4,
    "when_missed": "The chain breaks if you lose your Wanted Level mid-run — the official description makes the streak the condition, so a broken run must be restarted."
   },
   {
    "id": 35,
+   "progress_target": 100,
+   "progress_unit": "vehicles",
    "name": "Whip It Good",
    "description": "Discover 100 vehicles.",
    "grade": "bronze",
@@ -525,6 +591,7 @@
    "guide": "From the official description, discover 100 vehicles. Drive or ride 100 different vehicles and the game logs each new one — new models count, the same model twice does not. Check the vehicle list in-game to see what is still missing, and hop into anything unfamiliar as you explore.",
    "steps": ["Drive every new vehicle you see", "Check the discovered list in-game", "Reach 100 different vehicles"],
    "source": {"name": "GTA 6 achievements list — GTAViceCityHub", "url": "https://www.gtavicecityhub.com/achievements"},
+   "locations_note": "GTABase: scan 100 different vehicles with the WAiNK app without driving them — stand by a busy road and scan passing traffic. The 100% checklist needs 200 of 277 base models, so this finishes on the way to 100%.",
    "roadmap_stage": 3,
    "when_missed": "A completion counter — all 100 vehicles must be found before 100%."
   },
@@ -585,11 +652,19 @@
    "guide": "From the official description, rob a jewelry store without being detected. The whole robbery must stay undetected — plan the approach, move quietly, and leave before anyone raises the alarm. If you are spotted, the attempt fails; leave, reset, and try again. A manual save before you start is a sensible precaution.",
    "steps": ["Save manually first (precaution)", "Enter the jewelry store undetected", "Rob it and leave without ever being spotted"],
    "source": {"name": "PlayStation trophy list via Exophase & PSNProfiles (PlanetGTA6 mirror)", "url": "https://www.planetgta6.com/en/gta-6-trophies/"},
+   "locations": [
+    {"label": "Casa de Empeno — Vice City (smallest store; no back door needing the Snap Gun)", "source": "CryptoGames via PowerPyx"},
+    {"label": "Richardson Jewelry & Diamonds — Vice City (GTABase recommends this one for Sneakthief)", "source": "GTABase"},
+    {"label": "Donovan Banks & Co — Vice City", "source": "CryptoGames via PowerPyx"}
+   ],
+   "locations_note": "Yasmani's Jewelry Jobs (Chapter 3) gives the Snap Gun, which opens locked back doors without raising the alarm. Reported safe codes (PowerPyx via CryptoGames, single source — verify in-game): Casa de Empeno 1680, Richardson Jewelry 6815, Donovan Banks & Co 0104. Wiping the security footage keeps police from getting your description if you leave before they arrive.",
    "roadmap_stage": 4,
    "when_missed": "One-shot condition: 'without being detected' — being spotted fails the attempt and it must be retried."
   },
   {
    "id": 40,
+   "progress_target": 5,
+   "progress_unit": "vaults",
    "name": "Maximum Withdrawal",
    "description": "Rob 5 Bank Vaults and escape.",
    "grade": "silver",
@@ -600,6 +675,17 @@
    "guide": "From the official description, rob 5 bank vaults and escape — each vault robbery must end in an escape, so a vault robbed without escaping does not count. Plan each escape route before you go in, and do not rush the fifth. Bank vaults are repeatable targets, so a failed escape just means redoing that vault.",
    "steps": ["Plan an escape route first", "Rob a bank vault", "Escape — repeat for 5 vaults"],
    "source": {"name": "PlayStation trophy list via Exophase & PSNProfiles (PlanetGTA6 mirror)", "url": "https://www.planetgta6.com/en/gta-6-trophies/"},
+   "locations": [
+    {"label": "Fleeca — VCIA", "source": "GTADB"},
+    {"label": "Fleeca — Tequesta", "source": "GTADB"},
+    {"label": "Lombank — Downtown", "source": "GTADB"},
+    {"label": "Fleeca — Downtown", "source": "GTADB"},
+    {"label": "Lombank — Ocean Beach", "source": "GTADB"},
+    {"label": "Fleeca — Ocean Beach", "source": "GTADB"},
+    {"label": "Lombank — Ocean Beach (second branch — check the individual map icon, not just the brand)", "source": "GTADB"},
+    {"label": "Shorefront — Ocean Beach", "source": "GTADB"}
+   ],
+   "locations_note": "Large vaults unlock after the optional Chapter 4 mission 'That's Where The Money Is...'. A vault only opens when a security van arrives and a guard carries a briefcase inside — follow a van, or buy a $10,000 tip from Yasmani (after 2 Payday Loans robberies). Loot the vault, cash drawer and safe. Each vault robbery triggers an instant 4-star wanted level, so plan the escape first. Use Map > Robberies > Bank Jobs to track each branch (GTADB, CryptoGames).",
    "roadmap_stage": 4,
    "when_missed": "Each vault needs its escape: the official description pairs the robbery with escaping, so a failed escape means redoing that vault."
   },
@@ -620,6 +706,8 @@
   },
   {
    "id": 42,
+   "progress_target": 52,
+   "progress_unit": "areas",
    "name": "The Goodtime State",
    "description": "Explore all of Leonida.",
    "grade": "bronze",
@@ -630,11 +718,14 @@
    "guide": "From the official description, explore all of Leonida — the list tracks 52 areas. Drive the whole map, including the far corners, and watch the area counter in-game. This finishes naturally if you chase the other exploration trophies, but check the map for any region you have never entered.",
    "steps": ["Drive across Leonida region by region", "Visit the far corners, not just Vice City", "Reach all 52 areas"],
    "source": {"name": "GTA 6 achievements list — GTAViceCityHub", "url": "https://www.gtavicecityhub.com/achievements"},
+   "locations_note": "No published list names all 52 areas yet. Leonida has 5 counties (PowerPyx map guide): Mariana, Vice-Dale, Kelly, Leonard and Lummox. Drive region by region, including the far corners, and watch the in-game area counter.",
    "roadmap_stage": 3,
    "when_missed": null
   },
   {
    "id": 43,
+   "progress_target": 9,
+   "progress_unit": "gangs",
    "name": "Pest Control",
    "description": "Rob an Illegal Operation belonging to each gang.",
    "grade": "bronze",
@@ -645,6 +736,18 @@
    "guide": "From the official description, rob an illegal operation belonging to each gang — the list tracks 9 gangs. Hit a different gang's operation each time and keep count of which gangs are done. Operations are repeatable targets, so a failed hit just means trying that gang again.",
    "steps": ["Find an illegal operation", "Rob one belonging to a gang", "Repeat for all 9 gangs"],
    "source": {"name": "GTA 6 trophy list — OutpuTLag", "url": "https://outputlag.com/guides/gta-6-trophy-list/"},
+   "locations": [
+    {"label": "Kingfishers — Sunrise RV Park, Pelican Valley, Grassrivers (also: Fishing Shacks, Manatee Motel)", "source": "KeenGamer"},
+    {"label": "Kolts & Associates — Kingpin Bowling, Port Gellhorn (all 5 operations in/just north of Port Gellhorn)", "source": "KeenGamer"},
+    {"label": "M7 — M7 Compound", "source": "KeenGamer"},
+    {"label": "La Polilla Negra — Palmer Fishing Warehouse, Watson Bay", "source": "KeenGamer"},
+    {"label": "Final Chapter — Farm Fix Meth Lab, Ambrosia (also: Irons Building Supply)", "source": "KeenGamer"},
+    {"label": "San4San — JanJak's Garage, La Perle, Vice City (also: Sound4Sond Studio)", "source": "KeenGamer"},
+    {"label": "PTT Youngin$ — Southside compound, Vice City (2 standard operations; Ultimate Edition adds a third that does not count for 100%)", "source": "KeenGamer"},
+    {"label": "The Guardia Brothers — Casa Guardia", "source": "KeenGamer"},
+    {"label": "Other Criminals — Cigar Import Front (also: Exotic Animals Front, Slator Towing Inc, Chatfield Storage & Logistics, Leonida Carrier Warehouse, Gas Station Meth Front, Backroom Weed Front, Carter Mining Boathouse)", "source": "KeenGamer"}
+   ],
+   "locations_note": "39 Illegal Operations in all (KeenGamer, PowerPyx); the trophy needs one per gang, 100% needs all 39. Operations only appear on the map once you walk into them — use Map > Robberies > Illegal Operations and Progress > Gangs to track which gang still shows zero. An operation only counts when every key valuable is collected, including the safe.",
    "roadmap_stage": 4,
    "when_missed": null
   },
@@ -770,6 +873,8 @@
   },
   {
    "id": 52,
+   "progress_target": 250000,
+   "progress_unit": "$",
    "name": "Dime on the Dollar",
    "description": "Earn $250,000 laundering Marked Bills through your contacts.",
    "grade": "bronze",
@@ -780,11 +885,21 @@
    "guide": "From the official description, earn $250,000 laundering marked bills through your contacts. Find your laundering contacts, hand over marked bills, and bank the clean money until $250,000 is done. It is a slow grind, so launder little and often as you play instead of saving it all for the end.",
    "steps": ["Collect marked bills", "Launder them through your contacts", "Reach $250,000 laundered"],
    "source": {"name": "GTA 6 trophy list — OutpuTLag", "url": "https://outputlag.com/guides/gta-6-trophy-list/"},
+   "locations": [
+    {"label": "Tyrone — La Perle, Vice City (Chapter 3+; high price for narcotics)", "source": "GTAVibes / KeenGamer"},
+    {"label": "Yasmani — Little Cuba, Vice City (Chapter 3+; high price for marked bills)", "source": "GTAVibes / KeenGamer"},
+    {"label": "Dunk — Port Gellhorn (Chapter 2+; low price)", "source": "GTAVibes / KeenGamer"},
+    {"label": "Brian — South Key Lento (Chapter 1; very low price)", "source": "GTAVibes / KeenGamer"},
+    {"label": "Donnie — South Key Lento (Chapter 1; low price)", "source": "GTAVibes / KeenGamer"}
+   ],
+   "locations_note": "Marked bills come from robberies; the Dye Pack Jammer from the Chapter 3 mission Credit Check lets you fence them. Fence prices differ per contact and per goods type, so hold marked bills for Yasmani from Chapter 3 if you can.",
    "roadmap_stage": 5,
    "when_missed": null
   },
   {
    "id": 53,
+   "progress_target": 100000,
+   "progress_unit": "$",
    "name": "Treat Yo Self",
    "description": "Spend $100,000 across all shops.",
    "grade": "bronze",
@@ -800,6 +915,8 @@
   },
   {
    "id": 54,
+   "progress_target": 8,
+   "progress_unit": "garages",
    "name": "Little Boxes",
    "description": "Purchase all garage properties.",
    "grade": "bronze",
@@ -810,11 +927,24 @@
    "guide": "From the official description, purchase all garage properties — the list tracks 8 garages. Save up, then buy each one; check the property list in-game to see which are still unowned. Garages are also useful for the vehicle trophies, so buy them as you can afford them.",
    "steps": ["Save up for property", "Buy a garage property", "Own all 8 garages"],
    "source": {"name": "GTA 6 achievements list — GTAViceCityHub", "url": "https://www.gtavicecityhub.com/achievements"},
+   "locations": [
+    {"label": "Mitchel Auto Center — central Kelly County, east of Port Gellhorn — $4,000", "source": "HowToVideoGame"},
+    {"label": "7th Avenue Garage — Vice-Dale County, just east of the airport — $12,000", "source": "HowToVideoGame"},
+    {"label": "Store n' Bolt — north side of Ambrosia, Kelly County — $16,800", "source": "HowToVideoGame"},
+    {"label": "Wyatt Motors — central Ambrosia, a short way south-east of Store n' Bolt — $21,600", "source": "HowToVideoGame"},
+    {"label": "Bonita Court Garage — Washington Island, north of Washington Beach — $34,000", "source": "HowToVideoGame"},
+    {"label": "Atlantic Court Garage — Ocean Beach, on Vice City's beachfront — $40,000", "source": "HowToVideoGame"},
+    {"label": "Persistence Road Garage — western Bellville, south Leonard County, just north of Vice City (price not published — check the app)", "source": "HowToVideoGame"},
+    {"label": "Vela Rota Drive Garage — Capri (price not published — check the app)", "source": "HowToVideoGame"}
+   ],
+   "locations_note": "Buy through the Vice City Real Estate app, which installs after an early Chapter 2 job for Moses. Total for all 8 reported as $160,000 (GamesRecon). Story and edition garages (Port Gellhorn Station, Paradise, Shore Court) do not count toward the 8.",
    "roadmap_stage": 5,
    "when_missed": null
   },
   {
    "id": 55,
+   "progress_target": 10,
+   "progress_unit": "vehicles",
    "name": "On the Spot",
    "description": "Register 10 vehicles to the Scooter Bros app.",
    "grade": "bronze",

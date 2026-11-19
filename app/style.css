@@ -106,6 +106,27 @@ button.danger { border-color: var(--danger); color: #ffb3b3; }
 .trophy-detail p { margin: 0 0 8px; }
 .trophy-detail ol { margin: 0 0 10px; padding-left: 20px; }
 .trophy-detail li { margin-bottom: 2px; }
+.counter {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+  margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--line);
+}
+.counter-btn {
+  width: 30px; height: 30px; padding: 0; border-radius: 8px;
+  font-size: 18px; line-height: 1; flex: none;
+}
+.counter-btn:disabled { opacity: 0.35; cursor: default; }
+.counter-btn:disabled:hover { border-color: var(--line); }
+.counter-value { font-weight: 800; font-size: 15px; font-variant-numeric: tabular-nums; }
+.counter.complete .counter-value { color: var(--cyan); }
+.counter-hint { font-size: 12px; color: var(--muted); flex-basis: 100%; }
+.locations-intro { color: var(--muted); font-size: 13px; }
+.locations-list { margin: 0 0 10px; padding-left: 20px; }
+.locations-list li { margin-bottom: 4px; }
+.locations-list .loc-source { color: var(--muted); font-size: 13px; }
+.locations-note {
+  background: rgba(255, 201, 61, 0.08); border: 1px solid var(--gold);
+  border-radius: 8px; padding: 8px 10px; margin-bottom: 10px;
+}
 .miss-note { background: rgba(255, 154, 61, 0.12); border: 1px solid var(--orange); border-radius: 8px; padding: 8px 10px; margin-bottom: 10px; }
 .source-line { color: var(--muted); font-size: 13px; word-break: break-word; }
 .source-line strong { color: var(--ink); }
@@ -117,4 +138,6 @@ footer { max-width: 1060px; margin: 0 auto; padding: 0 16px 30px; color: var(--m
 @media (max-width: 640px) {
   .hero h1 { font-size: 30px; }
   .controls input[type="search"] { width: 100%; }
+  .counter-hint { flex-basis: 100%; }
+  .counter-value { font-size: 14px; }
 }

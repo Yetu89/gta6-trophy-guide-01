@@ -2,6 +2,9 @@
 // spoiler-safe mode, export/import, and a five-stage roadmap to the platinum.
 // All trophy data lives in data/trophies.json; this file only renders it.
 const STORE_KEY = 'gta6-trophy-guide-01-earned-v1';
+// Counters (n/target) live under a separate versioned key so the earned
+// ticks above are never disturbed by a progress-format change.
+const PROGRESS_KEY = 'gta6-trophy-guide-01-progress-v1';
 const listEl = document.getElementById('trophyList');
 const emptyEl = document.getElementById('emptyState');
 const searchEl = document.getElementById('search');
@@ -19,6 +22,11 @@ const saveNoteEl = document.getElementById('saveNote');
 const state = {
   trophies: [],
   earned: new Set(),
+  // progress: trophy id -> counted amount (only for trophies with a target)
+  progress: {},
+  // autoEarned: ids ticked earned by a counter reaching its target, so a
+  // manual tick is never undone by lowering a counter.
+  autoEarned: new Set(),
   kind: 'all',
   grade: 'all',
   query: '',
@@ -40,6 +48,67 @@ function loadEarned() {
 function saveEarned() {
   localStorage.setItem(STORE_KEY, JSON.stringify([...state.earned].sort((a, b) => a - b)));
   saveNoteEl.textContent = 'Saved in this browser just now.';
+}
+
+function trophyById(id) {
+  return state.trophies.find((t) => t.id === id);
+}
+
+function clampProgress(t, value) {
+  if (!t || !t.progress_target) return 0;
+  const n = Number.isInteger(value) ? value : Math.floor(Number(value) || 0);
+  return Math.max(0, Math.min(t.progress_target, n));
+}
+
+function loadProgress() {
+  try {
+    const raw = localStorage.getItem(PROGRESS_KEY);
+    const data = raw ? JSON.parse(raw) : null;
+    if (!data || typeof data !== 'object') return { progress: {}, autoEarned: new Set() };
+    const progress = {};
+    const counts = data.progress && typeof data.progress === 'object' ? data.progress : {};
+    for (const [key, value] of Object.entries(counts)) {
+      const id = Number(key);
+      const t = trophyById(id);
+      if (t && t.progress_target) progress[id] = clampProgress(t, value);
+    }
+    const auto = Array.isArray(data.autoEarned) ? data.autoEarned.filter((n) => Number.isInteger(n)) : [];
+    return { progress, autoEarned: new Set(auto) };
+  } catch {
+    return { progress: {}, autoEarned: new Set() };
+  }
+}
+
+function saveProgress() {
+  localStorage.setItem(PROGRESS_KEY, JSON.stringify({
+    progress: state.progress,
+    autoEarned: [...state.autoEarned].sort((a, b) => a - b),
+  }));
+}
+
+function formatCount(t, value) {
+  if (t.progress_unit === '$') return '$' + value.toLocaleString('en-US');
+  return String(value);
+}
+
+// Set a counter. Reaching the target ticks the trophy earned automatically;
+// dropping back below the target unticks it again — but only when the tick
+// came from the counter, never a manual tick.
+function setProgress(id, value) {
+  const t = trophyById(id);
+  if (!t || !t.progress_target) return;
+  const next = clampProgress(t, value);
+  state.progress[id] = next;
+  if (next >= t.progress_target) {
+    state.earned.add(id);
+    state.autoEarned.add(id);
+  } else if (state.autoEarned.has(id)) {
+    state.earned.delete(id);
+    state.autoEarned.delete(id);
+  }
+  saveProgress();
+  saveEarned();
+  renderAll();
 }
 
 function readHash() {
@@ -76,7 +145,8 @@ function trophyMatches(t) {
   if (state.earnedOnly && !state.earned.has(t.id)) return false;
   if (state.query) {
     const q = state.query.toLowerCase();
-    const hay = (t.name + ' ' + t.description + ' ' + t.guide).toLowerCase();
+    const locText = (t.locations || []).map((l) => l.label).join(' ');
+    const hay = (t.name + ' ' + t.description + ' ' + t.guide + ' ' + locText).toLowerCase();
     if (!hay.includes(q)) return false;
   }
   return true;
@@ -141,7 +211,13 @@ function trophyCard(t) {
   box.addEventListener('click', (event) => event.stopPropagation());
   box.addEventListener('change', () => {
     if (box.checked) state.earned.add(t.id);
-    else state.earned.delete(t.id);
+    else {
+      state.earned.delete(t.id);
+      // A manual untick overrides the counter: it must not re-tick the
+      // trophy until the counter is moved again.
+      state.autoEarned.delete(t.id);
+      saveProgress();
+    }
     saveEarned();
     renderAll();
   });
@@ -195,6 +271,44 @@ function trophyCard(t) {
   tags.append(stageTag);
   card.append(tags);
 
+  // Progress counter. Shown even in spoiler-safe mode: a bare "0/18 spots"
+  // reveals no story detail, and hiding it would make the counter useless
+  // exactly when the trophy name is hidden.
+  if (t.progress_target) {
+    const value = state.progress[t.id] || 0;
+    const counter = document.createElement('div');
+    counter.className = 'counter' + (value >= t.progress_target ? ' complete' : '');
+    const minus = document.createElement('button');
+    minus.type = 'button';
+    minus.className = 'counter-btn';
+    minus.textContent = '−';
+    minus.setAttribute('aria-label', 'Decrease progress for trophy ' + t.id);
+    minus.disabled = value <= 0;
+    minus.addEventListener('click', (event) => {
+      event.stopPropagation();
+      setProgress(t.id, value - 1);
+    });
+    const readout = document.createElement('span');
+    readout.className = 'counter-value';
+    readout.textContent = formatCount(t, value) + ' / ' + formatCount(t, t.progress_target) +
+      (t.progress_unit === '$' ? '' : ' ' + t.progress_unit);
+    const plus = document.createElement('button');
+    plus.type = 'button';
+    plus.className = 'counter-btn';
+    plus.textContent = '+';
+    plus.setAttribute('aria-label', 'Increase progress for trophy ' + t.id);
+    plus.disabled = value >= t.progress_target;
+    plus.addEventListener('click', (event) => {
+      event.stopPropagation();
+      setProgress(t.id, value + 1);
+    });
+    const hint = document.createElement('span');
+    hint.className = 'counter-hint';
+    hint.textContent = 'Hit the target and this trophy is ticked earned; drop below it and the tick is removed.';
+    counter.append(minus, readout, plus, hint);
+    card.append(counter);
+  }
+
   if (state.openId === t.id && !hidden) {
     const detail = document.createElement('div');
     detail.className = 'trophy-detail';
@@ -212,6 +326,32 @@ function trophyCard(t) {
       steps.append(li);
     }
     detail.append(stepsHead, steps);
+    if (t.locations && t.locations.length) {
+      const locHead = document.createElement('h4');
+      locHead.textContent = 'Community-reported locations — UNVERIFIED';
+      const locIntro = document.createElement('p');
+      locIntro.className = 'locations-intro';
+      locIntro.textContent = 'Reported by players and guide sites on launch day, not confirmed by Rockstar. Check each one in your own game before relying on it.';
+      const locList = document.createElement('ul');
+      locList.className = 'locations-list';
+      for (const loc of t.locations) {
+        const li = document.createElement('li');
+        const label = document.createElement('span');
+        label.textContent = loc.label;
+        const src = document.createElement('span');
+        src.className = 'loc-source';
+        src.textContent = ' — ' + loc.source;
+        li.append(label, src);
+        locList.append(li);
+      }
+      detail.append(locHead, locIntro, locList);
+    }
+    if (t.locations_note) {
+      const note = document.createElement('p');
+      note.className = 'locations-note';
+      note.textContent = t.locations_note;
+      detail.append(note);
+    }
     if (t.missable && t.when_missed) {
       const missBox = document.createElement('p');
       missBox.className = 'miss-note';
@@ -282,6 +422,8 @@ function exportProgress() {
     game: 'Grand Theft Auto VI',
     exported: new Date().toISOString(),
     earned: [...state.earned].sort((a, b) => a - b),
+    progress: state.progress,
+    autoEarned: [...state.autoEarned].sort((a, b) => a - b),
   };
   const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
   const a = document.createElement('a');
@@ -299,6 +441,22 @@ async function importProgress(file) {
     if (!Array.isArray(ids)) throw new Error('bad file');
     const valid = new Set(state.trophies.map((t) => t.id));
     state.earned = new Set(ids.filter((n) => Number.isInteger(n) && valid.has(n)));
+    // Counters: accept the current {progress, autoEarned} shape, and fall
+    // back to empty counters for old exports that only carried earned ids.
+    const counts = data && typeof data === 'object' && !Array.isArray(data) ? data.progress : null;
+    const nextProgress = {};
+    if (counts && typeof counts === 'object') {
+      for (const [key, value] of Object.entries(counts)) {
+        const id = Number(key);
+        const t = trophyById(id);
+        if (t && t.progress_target) nextProgress[id] = clampProgress(t, value);
+      }
+    }
+    state.progress = nextProgress;
+    const auto = data && typeof data === 'object' && !Array.isArray(data) && Array.isArray(data.autoEarned)
+      ? data.autoEarned.filter((n) => Number.isInteger(n) && valid.has(n)) : [];
+    state.autoEarned = new Set(auto);
+    saveProgress();
     saveEarned();
     renderAll();
     saveNoteEl.textContent = 'Progress imported: ' + state.earned.size + ' trophies earned.';
@@ -337,8 +495,11 @@ document.getElementById('importFile').addEventListener('change', (event) => {
   event.target.value = '';
 });
 document.getElementById('resetBtn').addEventListener('click', () => {
-  if (window.confirm('Reset all progress? This clears every tick.')) {
+  if (window.confirm('Reset all progress? This clears every tick and every counter.')) {
     state.earned = new Set();
+    state.progress = {};
+    state.autoEarned = new Set();
+    saveProgress();
     saveEarned();
     renderAll();
   }
@@ -347,6 +508,9 @@ document.getElementById('resetBtn').addEventListener('click', () => {
 const doc = await (await fetch('data/trophies.json')).json();
 state.trophies = doc.trophies;
 state.earned = loadEarned();
+const savedProgress = loadProgress();
+state.progress = savedProgress.progress;
+state.autoEarned = savedProgress.autoEarned;
 readHash();
 syncControls();
 renderAll();
