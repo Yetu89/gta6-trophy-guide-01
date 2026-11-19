@@ -251,6 +251,18 @@
    "guide": "From the official description, try each type of activity once — the list counts 9 activity types. Sample one of each: races, the shooting range, fishing, the arcade, and the rest the game offers as you explore. One attempt each is enough; no wins or medals are needed.",
    "steps": ["Open the activities list as you explore Leonida", "Try one of each of the 9 activity types", "It unlocks after the ninth type"],
    "source": {"name": "GTA 6 trophy list — OutpuTLag", "url": "https://outputlag.com/guides/gta-6-trophy-list/"},
+   "locations": [
+    {"label": "Fishing — Leonida Keys coast and Mount Kalaga rivers", "source": "GTAIntel"},
+    {"label": "Hunting — Mount Kalaga National Park", "source": "Rockstar / Leonida Interactive"},
+    {"label": "Golf — Leaf Links Golf Course, Vice Beach island; also Mount Hailes Country Club", "source": "Beebom / GolfMagic"},
+    {"label": "Shooting range — Griffin Shooting Range, north-west Vice City; Rodgers Ranch, north-east of Port Gellhorn", "source": "PowerPyx / GTADB"},
+    {"label": "Pool — Pool Hall, Vice City; pool tables in bars across Leonida", "source": "FullSweep / thegameswiki"},
+    {"label": "Basketball — hoop at Jason's safehouse, Leonida Keys; street court, Vice City (sink one basket)", "source": "gta6activities.com / thegameswiki"},
+    {"label": "Arcade game — Bang For Your Buck cabinets around Leonida; reported: Game Hoorde, Port Gellhorn (Crossroad Park Mini Mall)", "source": "GTABase / WikiGTAVI"},
+    {"label": "Race — street races, Vice City; Gellhorn International Raceway, Port Gellhorn", "source": "thegameswiki"},
+    {"label": "Stunt — Stunt Spots via Map > Exploration > Stunt Spots", "source": "GTABase"}
+   ],
+   "locations_note": "The 9 activity types are fishing, hunting, golf, a shooting range, pool, basketball, an arcade game, winning a race and a stunt (GTABase). Progress > Activities shows which types are still untried. Golf, basketball and pool spots are community-reported and unconfirmed by Rockstar.",
    "roadmap_stage": 4,
    "when_missed": null
   },
@@ -308,6 +320,13 @@
    "guide": "From the official description, win 20 different races across Leonida — road, off-road, boat or air, whatever the game offers. Different races count, so vary the events rather than replaying one favourite. Losses do not hurt; only wins in new events add to the count.",
    "steps": ["Enter races around Leonida", "Win 20 different race events", "Vary the events — repeats of one race do not add new ones"],
    "source": {"name": "GTA 6 trophy list — OutpuTLag", "url": "https://outputlag.com/guides/gta-6-trophy-list/"},
+   "locations": [
+    {"label": "Gellhorn International Raceway — Port Gellhorn, Kelly County; main road course and drag strip", "source": "thegameswiki"},
+    {"label": "Thrillbilly Mud Club — Kelly County; off-road races", "source": "thegameswiki / gtasixmap"},
+    {"label": "Street-racing venues — Vice City (four venues per launch reviews; Yago's street races)", "source": "gtasixmap / PowerPyx"},
+    {"label": "Cross-country racing venues — three venues across Leonida (per launch reviews)", "source": "gtasixmap"}
+   ],
+   "locations_note": "40 races to choose from; winning the same race again does not count (GTABase). Launch reviews count four street-racing venues, three cross-country venues and two race tracks (gtasixmap).",
    "roadmap_stage": 4,
    "when_missed": null
   },
@@ -323,6 +342,11 @@
    "guide": "From the official description, beat Cal in a fishing challenge — a head-to-head fishing contest, so it is about the catch, not the spot. Find Cal's fishing challenge, fish it, and out-catch him. If you lose, challenge him again; nothing here is a one-shot fail.",
    "steps": ["Find Cal's fishing challenge", "Fish the challenge and beat Cal's catch", "Retry if you lose"],
    "source": {"name": "GTA 6 achievements list — GTAViceCityHub", "url": "https://www.gtavicecityhub.com/achievements"},
+   "locations": [
+    {"label": "Cal's fishing spot — purple map icon; Cal texts you after the Chapter 1 mission Feng Shui", "source": "GTABase"},
+    {"label": "Cal's house and dock — Key Lento, Leonida Keys; fishing spot about two minutes away by boat", "source": "PowerPyx"}
+   ],
+   "locations_note": "Cal lives in Key Lento in the Leonida Keys. His challenge comes by text after Feng Shui — follow the purple icon, out-catch him, and if you lose, challenge him again (GTABase).",
    "roadmap_stage": 4,
    "when_missed": null
   },
@@ -338,6 +362,13 @@
    "guide": "From the official description, complete an arcade game. Find an arcade machine in Leonida, start a game and play it to completion. Any arcade game counts, so pick the shortest one you enjoy — no high score is needed.",
    "steps": ["Find an arcade machine", "Start any arcade game", "Play it through to the end"],
    "source": {"name": "GTA 6 achievements list — GTAViceCityHub", "url": "https://www.gtavicecityhub.com/achievements"},
+   "locations": [
+    {"label": "TV at home — Tenebrae Lux, Street Trash III and Time Jackers Rewind", "source": "GTABase"},
+    {"label": "Arcade cabinets — Bang For Your Buck, on cabinets around Leonida", "source": "GTABase"},
+    {"label": "Game Hoorde — Port Gellhorn, Crossroad Park Mini Mall; three machines seen in the Aug 2026 leaked clip", "source": "WikiGTAVI (leak-based, UNVERIFIED)"},
+    {"label": "Arcade — central downtown Vice City, between Effluvia's block and the nightlife strip (position approximate)", "source": "Vice Assist (Extended Look footage)"}
+   ],
+   "locations_note": "Cabinet locations are community-reported from pre-launch footage and leaks, not launch-verified — the TV-at-home games are the safe route (GTABase).",
    "roadmap_stage": 4,
    "when_missed": null
   },
@@ -353,6 +384,10 @@
    "guide": "From the official description, this is the final mission of Andy's stranger strand. Meet Andy, take his missions one by one, and follow the strand to its last mission — a single mission is not enough, the whole strand must be finished. Stranger strands stay available after the story, so this is not missable.",
    "steps": ["Meet Andy and take his missions", "Follow his strand to the end", "Complete his final mission"],
    "source": {"name": "PlayStation trophy list via Exophase & PSNProfiles (PlanetGTA6 mirror)", "url": "https://www.planetgta6.com/en/gta-6-trophies/"},
+   "locations": [
+    {"label": "Belville — Andy texts Lucia an address in Belville (Chapter 3, Lucia only)", "source": "GTABase"}
+   ],
+   "locations_note": "Five missions in order: Climbing the Cellerichain, Pay the Cellerica Fee, Peach!, Read the Label and Puff Puff Pass — the last one awards the trophy (GTABase).",
    "roadmap_stage": 2,
    "when_missed": null
   },
@@ -368,6 +403,11 @@
    "guide": "From the official description, this is the final mission of Kenton's stranger strand. Meet Kenton, take his missions one by one, and follow the strand to its last mission — a single mission is not enough, the whole strand must be finished. Stranger strands stay available after the story, so this is not missable.",
    "steps": ["Meet Kenton and take his missions", "Follow his strand to the end", "Complete his final mission"],
    "source": {"name": "PlayStation trophy list via Exophase & PSNProfiles (PlanetGTA6 mirror)", "url": "https://www.planetgta6.com/en/gta-6-trophies/"},
+   "locations": [
+    {"label": "Kenton — Key Lento, Leonida Keys (green KR icon)", "source": "GTABase"},
+    {"label": "7 shipwreck sites — purple chest markers; dive and use the metal detector to dig up the treasure", "source": "GTABase"}
+   ],
+   "locations_note": "Track it under Progress > Collections > Kenton's Treasures. Kenton disappears after Chapter 1 and texts Jason again later, so you can finish it then (GTABase).",
    "roadmap_stage": 2,
    "when_missed": null
   },
@@ -383,6 +423,10 @@
    "guide": "From the official description, this is the final mission of Billy's stranger strand. Meet Billy, take his missions one by one, and follow the strand to its last mission — a single mission is not enough, the whole strand must be finished. Stranger strands stay available after the story, so this is not missable.",
    "steps": ["Meet Billy and take his missions", "Follow his strand to the end", "Complete his final mission"],
    "source": {"name": "PlayStation trophy list via Exophase & PSNProfiles (PlanetGTA6 mirror)", "url": "https://www.planetgta6.com/en/gta-6-trophies/"},
+   "locations": [
+    {"label": "Thrillbilly Mud Club — Kelly County", "source": "GTABase"}
+   ],
+   "locations_note": "Billy's five jobs start after the Chapter 2 mission Coffee Break; the fifth, Hometown Heroes, unlocks the trophy. They stay available after the story (GTABase).",
    "roadmap_stage": 2,
    "when_missed": null
   },
@@ -400,6 +444,13 @@
    "guide": "From the official description, finish 8 full mission strands for strangers across Leonida. Andy, Kenton, Billy, Randy and Tyrone are five named ones in this list, so find three more strangers as you explore. A strand only counts when its final mission is done — single missions do not add up.",
    "steps": ["Take stranger missions as you meet them", "Finish a full strand — a single mission is not enough", "Complete 8 strands"],
    "source": {"name": "PlayStation trophy list via Exophase & PSNProfiles (PlanetGTA6 mirror)", "url": "https://www.planetgta6.com/en/gta-6-trophies/"},
+   "locations": [
+    {"label": "Kirk (Skunk Ape) — flyer at Skeeter's bar, Hamlet; call him, then meet at night in the swamps of Mariana County near Pelican River", "source": "PowerPyx"},
+    {"label": "Kyle — McKittrick Farm, Kelly County", "source": "PowerPyx / SVG"},
+    {"label": "Yago — street race, Vice City (Vice-Dale County)", "source": "PowerPyx / SVG"},
+    {"label": "Pilot Pete — Southpoint Airfield deliveries (Chapter 4, Jason only)", "source": "PowerPyx"}
+   ],
+   "locations_note": "Only certain strands count: Kirk, Kyle, Yago and Pilot Pete are confirmed counters; Moses, Tyrone, Yasmani, Andy, Billy and Eddie do not count (PowerPyx, GTABase). The remaining qualifying strands are still being confirmed, so check the trophy's progress counter in your trophy list (GTABase).",
    "roadmap_stage": 2,
    "when_missed": null
   },
@@ -415,6 +466,11 @@
    "guide": "From the official description, this is the final mission of Randy's stranger strand. Meet Randy, take his missions one by one, and follow the strand to its last mission — a single mission is not enough, the whole strand must be finished. Stranger strands stay available after the story, so this is not missable.",
    "steps": ["Meet Randy and take his missions", "Follow his strand to the end", "Complete his final mission"],
    "source": {"name": "PlayStation trophy list via Exophase & PSNProfiles (PlanetGTA6 mirror)", "url": "https://www.planetgta6.com/en/gta-6-trophies/"},
+   "locations": [
+    {"label": "Randy's garage — west Vice City (RK icon)", "source": "GTABase"},
+    {"label": "Hotel driveways — Vice Beach and Ocean Beach; best places to spot the 16 sports cars on his list", "source": "GTABase"}
+   ],
+   "locations_note": "Opens after the Chapter 3 mission Clonin' Keys, Makin' Gs (Key Cloner). Scan cars with the WAiNK app to check them against the list; cars in better condition pay more (GTABase).",
    "roadmap_stage": 2,
    "when_missed": null
   },
@@ -430,6 +486,10 @@
    "guide": "From the official description, this is the final mission of Tyrone's stranger strand. Meet Tyrone, take his missions one by one, and follow the strand to its last mission — a single mission is not enough, the whole strand must be finished. Stranger strands stay available after the story, so this is not missable.",
    "steps": ["Meet Tyrone and take his missions", "Follow his strand to the end", "Complete his final mission"],
    "source": {"name": "PlayStation trophy list via Exophase & PSNProfiles (PlanetGTA6 mirror)", "url": "https://www.planetgta6.com/en/gta-6-trophies/"},
+   "locations": [
+    {"label": "Kitty Litter labs — purple markers around Vice City", "source": "GTABase"}
+   ],
+   "locations_note": "Jason-only. Starts after Here, Kitty Kitty in Chapter 3; destroy enough labs and the last job, Shut Down the Labs, awards the trophy (GTABase).",
    "roadmap_stage": 2,
    "when_missed": null
   },
@@ -475,6 +535,11 @@
    "guide": "From the official description, hunt a unique animal for Bret. Bret's strand leads to one specific animal — follow Bret's missions until the hunt is offered, then take the animal down. It is tied to Bret, so do not skip his strand, and it is not missable: the hunt waits until you take it.",
    "steps": ["Follow Bret's stranger missions", "Take the unique-animal hunt when offered", "Bring the animal down"],
    "source": {"name": "PlayStation trophy list via Exophase & PSNProfiles (PlanetGTA6 mirror)", "url": "https://www.planetgta6.com/en/gta-6-trophies/"},
+   "locations": [
+    {"label": "Bret Vogel — Lummox County, near Mount Kalaga; texts Jason after Coffee Break in Chapter 2 (Jason only)", "source": "GTABase"},
+    {"label": "Target Decks — purple icons; hunt the animals on his decks and bring them back as Jason", "source": "GTABase"}
+   ],
+   "locations_note": "Which animal triggers the trophy is not confirmed yet; the 100% checklist needs all 15 Target Decks anyway (GTABase).",
    "roadmap_stage": 2,
    "when_missed": null
   },
@@ -536,6 +601,7 @@
    "guide": "From the official description, complete 50 challenges — the small objectives the game tracks across Leonida. They stack up as you play every system, so chase the ones nearest to done and let the rest come with normal play. Check the challenges list in-game to see which are close.",
    "steps": ["Open the challenges list in-game", "Finish challenges as you play", "Reach 50 completed"],
    "source": {"name": "GTA 6 trophy list — OutpuTLag", "url": "https://outputlag.com/guides/gta-6-trophy-list/"},
+   "locations_note": "50 of the 80 challenges; Progress > Challenges marks finished ones with a tick. Many complete themselves while you play, and the 100% checklist needs 70 (GTABase). No single location — challenges span every system in Leonida.",
    "roadmap_stage": 4,
    "when_missed": null
   },
@@ -551,6 +617,10 @@
    "guide": "From the official description, lose a 4-star wanted level with your partner and escape the heat. Build a 4-star wanted level while your partner is with you, then break line of sight and stay hidden until it clears. Your partner must be present and the escape must succeed — a quiet area and a fast car help, and a failed escape just means trying again.",
    "steps": ["Play with your partner beside you", "Raise a 4-star wanted level", "Escape and stay hidden until it clears"],
    "source": {"name": "GTA 6 trophy list — OutpuTLag", "url": "https://outputlag.com/guides/gta-6-trophy-list/"},
+   "locations": [
+    {"label": "Train tunnel north of Ambrosia — Kelly County; shakes off cops and helicopters", "source": "GTABase"}
+   ],
+   "locations_note": "Possible once both characters are together (after Coffee Break in Chapter 2). Call your partner, get a 4-star wanted level and escape the red heat zone. Bank vault robberies always give 4 stars, so it often unlocks there (GTABase).",
    "roadmap_stage": 4,
    "when_missed": null
   },
@@ -607,6 +677,7 @@
    "guide": "From the official description, take down 5 enemies in a single use of Combat Focus. Trigger it only when five enemies are in range, then chain the takedowns fast — if the focus ends at four, try again. A manual save beforehand is a sensible precaution, and a group of enemies in the open is the right setup.",
    "steps": ["Save manually first (precaution)", "Find five enemies grouped together", "Trigger Combat Focus and take all five down before it ends"],
    "source": {"name": "PlayStation trophy list via Exophase & PSNProfiles (PlanetGTA6 mirror)", "url": "https://www.planetgta6.com/en/gta-6-trophies/"},
+   "locations_note": "Combat Focus (click both sticks while aiming) lasts only a few seconds — fill Focus first and use an assault rifle. Gang operation thugs work well; cops, soldiers and civilians do not seem to count (GTABase). Try it during a gang operation, e.g. in Port Gellhorn.",
    "roadmap_stage": 4,
    "when_missed": "One-shot condition in the official description: five takedowns in a single use of Combat Focus — a use that ends early does not count."
   },
@@ -622,6 +693,10 @@
    "guide": "From the official description, make an unscheduled departure at VCIA — Vice City International Airport. Leave in a way the schedule never planned: take an aircraft and go. It is a stunt-style trophy, so expect a wanted response and a fast exit once you are airborne.",
    "steps": ["Go to VCIA", "Get to an aircraft", "Leave in an unscheduled departure"],
    "source": {"name": "PlayStation trophy list via Exophase & PSNProfiles (PlanetGTA6 mirror)", "url": "https://www.planetgta6.com/en/gta-6-trophies/"},
+   "locations": [
+    {"label": "VCIA — Gates E3 and E4; steal a big passenger jet docked at a departure gate's boarding bridge", "source": "GTABase"}
+   ],
+   "locations_note": "Planes parked out on the airfield do not count. Drive through the airfield fence and use the door by the stairs next to the boarding bridge; take off and get about 1 km away from the airport (GTABase).",
    "roadmap_stage": 4,
    "when_missed": null
   },
@@ -637,6 +712,10 @@
    "guide": "From the official description, this is about the Rhino tanks — get into the thick of them and come out the other side. The description gives no count, so treat it as a combat moment: provoke the Rhinos and survive the encounter. It is repeatable, so a failed attempt just means trying again.",
    "steps": ["Find where Rhinos operate", "Engage the tanks", "Survive the encounter"],
    "source": {"name": "PlayStation trophy list via Exophase & PSNProfiles (PlanetGTA6 mirror)", "url": "https://www.planetgta6.com/en/gta-6-trophies/"},
+   "locations": [
+    {"label": "Mile Zero Air Station — south-west island of Mariana County; tanks at the south end of the base", "source": "GTABase"}
+   ],
+   "locations_note": "Steal a tank and take out enemies from inside it until the trophy pops (GTABase).",
    "roadmap_stage": 4,
    "when_missed": null
   },
@@ -701,6 +780,7 @@
    "guide": "From the official description, rob an armored truck and escape. Stop an armored truck, take it, and escape — the escape is part of the trophy, so a robbery that ends in capture does not count. Watch the roads for a truck on its route, hit it, and have your getaway ready before you start.",
    "steps": ["Find an armored truck on the road", "Stop it and take it", "Escape clean"],
    "source": {"name": "PlayStation trophy list via Exophase & PSNProfiles (PlanetGTA6 mirror)", "url": "https://www.planetgta6.com/en/gta-6-trophies/"},
+   "locations_note": "Box in an armored truck, put a sticky bomb on its back doors, blow them open and get away — or rob a bank vault, which counts too, as long as you escape the red heat zone or reach a Pay 'n' Spray (GTABase). No fixed truck route is published yet.",
    "roadmap_stage": 4,
    "when_missed": "The escape is part of the condition in the official description — a robbery without an escape does not count."
   },
@@ -763,6 +843,7 @@
    "guide": "From the official description, enjoy a cocktail with a view on Ocean Beach. Go to Ocean Beach, order a cocktail and take in the view. It is a quiet world moment — no combat and no timer named in the description — so do it whenever you are passing the beach.",
    "steps": ["Go to Ocean Beach", "Order a cocktail", "Enjoy the view"],
    "source": {"name": "PlayStation trophy list via Exophase & PSNProfiles (PlanetGTA6 mirror)", "url": "https://www.planetgta6.com/en/gta-6-trophies/"},
+   "locations_note": "Location unconfirmed: no specific bar is published yet — GTABase (19 Nov) lists the exact steps as unconfirmed. The trophy is a cocktail with a view on Ocean Beach, Vice City; any cocktail spot on the Ocean Beach strip is the lead to check.",
    "roadmap_stage": 3,
    "when_missed": null
   },
@@ -778,6 +859,10 @@
    "guide": "From the official description, smash your way out of a vehicle showroom in classic style. Drive through a vehicle showroom and out the other side — pick a fast car, aim for the glass, and keep going. It is a stunt-style world moment, so expect a wanted response after.",
    "steps": ["Find a vehicle showroom", "Get a fast car inside or aimed at it", "Smash your way out"],
    "source": {"name": "PlayStation trophy list via Exophase & PSNProfiles (PlanetGTA6 mirror)", "url": "https://www.planetgta6.com/en/gta-6-trophies/"},
+   "locations": [
+    {"label": "Vehicle showroom — south of Vice City; the blue Banshee inside", "source": "PowerPyx"}
+   ],
+   "locations_note": "Only this blue Banshee counts, not any other car — it is an easter egg reference to the Banshee from GTA III. You can only steal it after obtaining the Key Cloner in the Chapter 3 mission Clonin' Keys, Makin' Gs (PowerPyx).",
    "roadmap_stage": 3,
    "when_missed": null
   },
@@ -793,6 +878,10 @@
    "guide": "From the official description, follow through at the Kolt & Associates bowling alley. Go to that bowling alley and bowl — follow through on the shot. One full game is the safe way to be sure it registers, and the alley is open whenever you want a break from the story.",
    "steps": ["Go to the Kolt & Associates bowling alley", "Bowl a game", "Follow through on your shots"],
    "source": {"name": "PlayStation trophy list via Exophase & PSNProfiles (PlanetGTA6 mirror)", "url": "https://www.planetgta6.com/en/gta-6-trophies/"},
+   "locations": [
+    {"label": "Kingpin Bowling — Port Gellhorn, south of town, near Moses' chop shop", "source": "GTABase / Respec"}
+   ],
+   "locations_note": "A Kolt & Associates gang operation, first marked by Hit Kingpin Bowling in Chapter 2. GTABase reports the trophy pops after taking the three valuables (luxury watch in the south-east office, Gutterball Moreland 850 shotgun on the north-east table, safe in the north-east hallway — bring sticky bombs) and losing the police; you do not need all three in one visit.",
    "roadmap_stage": 3,
    "when_missed": null
   },
@@ -808,6 +897,10 @@
    "guide": "From the official description, this is a partnership moment with mass appeal. Play with your partner and do something the crowd would love — the description names no count or place, so treat it as a story-adjacent world moment that comes from playing together. It is not a one-shot condition in the description, so keep playing as a pair and it will come.",
    "steps": ["Play alongside your partner", "Look for a big shared moment", "It unlocks from the partnership scene"],
    "source": {"name": "PlayStation trophy list via Exophase & PSNProfiles (PlanetGTA6 mirror)", "url": "https://www.planetgta6.com/en/gta-6-trophies/"},
+   "locations": [
+    {"label": "Fitness clubs — Map > Activities; work out with your partner along", "source": "GTABase"}
+   ],
+   "locations_note": "Max out Strength for both Jason and Lucia. Training one trains the other too; after the story you can also train at home (GTABase).",
    "roadmap_stage": 4,
    "when_missed": null
   },
@@ -823,6 +916,7 @@
    "guide": "From the official description, this is about choices — PlayStation tracks a count toward it, so keep making story and world choices as you play and it will come. Nothing in the description names a single choice, so do not hunt for one; it builds up across a normal playthrough.",
    "steps": ["Keep playing the story", "Make choices when the game offers them", "It unlocks as the count builds"],
    "source": {"name": "PlayStation trophy list via Exophase & PSNProfiles (PlanetGTA6 mirror)", "url": "https://www.planetgta6.com/en/gta-6-trophies/"},
+   "locations_note": "500 actions that change your Criminal Profile; most players get it without trying. Turn on Criminal Profile notifications in Settings > UI to watch the count. Do not push towards the Irredeemable profile — it is permanent (GTABase). No fixed location.",
    "roadmap_stage": 4,
    "when_missed": null
   },
@@ -838,6 +932,7 @@
    "guide": "From the official description, this is about succeeding on a second try — fail something once, then get it right the second time. It will likely come naturally during a normal playthrough; do not force it, and do not worry about which attempt it was.",
    "steps": ["Attempt a challenge and fail it once", "Try it again", "Succeed on the second attempt"],
    "source": {"name": "PlayStation trophy list via Exophase & PSNProfiles (PlanetGTA6 mirror)", "url": "https://www.planetgta6.com/en/gta-6-trophies/"},
+   "locations_note": "Location unconfirmed: the exact steps are not confirmed yet (GTABase, 19 Nov). 'Second time's the charm' suggests succeeding at something on a second attempt.",
    "roadmap_stage": 4,
    "when_missed": null
   },
@@ -853,6 +948,7 @@
    "guide": "From the official description, this is a strange sighting — something unexplained in the world. Explore the odd corners of Leonida at odd hours and it will find you; the description deliberately says no more. This guide invents no location for it, because no verified source names one yet.",
    "steps": ["Explore the stranger corners of Leonida", "Keep an eye out for something unexplained", "It unlocks when the moment happens"],
    "source": {"name": "PlayStation trophy list via Exophase & PSNProfiles (PlanetGTA6 mirror)", "url": "https://www.planetgta6.com/en/gta-6-trophies/"},
+   "locations_note": "Location unconfirmed: expect a strange event or Easter egg somewhere in Leonida, but no verified source names a place yet (GTABase, 19 Nov) — this guide lists none rather than inventing one.",
    "roadmap_stage": 3,
    "when_missed": null
   },
@@ -868,6 +964,7 @@
    "guide": "From the official description, bowl people over with a melee drive-by — knock them down with a melee attack from a moving vehicle. Line up a slow pass past a group and swing as you go by. It is repeatable, so a missed swing just means another pass.",
    "steps": ["Get a melee weapon and a vehicle", "Drive slowly past a group", "Strike with the melee weapon as you pass"],
    "source": {"name": "PlayStation trophy list via Exophase & PSNProfiles (PlanetGTA6 mirror)", "url": "https://www.planetgta6.com/en/gta-6-trophies/"},
+   "locations_note": "No fixed location: knock people down with a melee attack from a moving vehicle. Line up a slow pass past a group and swing as you go by (GTABase).",
    "roadmap_stage": 4,
    "when_missed": null
   },
@@ -910,6 +1007,7 @@
    "guide": "From the official description, spend $100,000 across all shops. Total spending across every shop counts — weapons, clothes, food, cars, anything the shops sell. Spend as you play and the total builds; big purchases near the end can close the gap.",
    "steps": ["Buy what you need in any shop", "Keep spending across shops", "Reach $100,000 spent"],
    "source": {"name": "GTA 6 trophy list — OutpuTLag", "url": "https://outputlag.com/guides/gta-6-trophy-list/"},
+   "locations_note": "A running total of $100,000 across every kind of shop. Guns, car mods and tattoos use it up fastest (GTABase) — gun stores, mod shops and tattoo parlours are the quickest route; no single shop is required.",
    "roadmap_stage": 5,
    "when_missed": null
   },
@@ -955,6 +1053,11 @@
    "guide": "From the official description, register 10 vehicles to the Scooter Bros app. Drive a vehicle, open the app and register it, then move on to the next — ten registrations in total. Any vehicles count, so use the ones you already drive for the vehicle-discovery trophy.",
    "steps": ["Find a vehicle", "Register it in the Scooter Bros app", "Register 10 vehicles"],
    "source": {"name": "GTA 6 achievements list — GTAViceCityHub", "url": "https://www.gtavicecityhub.com/achievements"},
+   "locations": [
+    {"label": "Moses' garage — Port Gellhorn", "source": "GTABase"},
+    {"label": "Pay 'n' Spray — registers tracked vehicles from Chapter 3", "source": "GTABase"}
+   ],
+   "locations_note": "Moses' Chapter 2 mission gets you the Scooter Bros app. Take stolen vehicles to his garage, respray them and register them. At first he only takes cars without trackers; from Chapter 3, any Pay 'n' Spray registers tracked ones. You need free garage space and each registration costs money, so use cheap cars and bikes (GTABase).",
    "roadmap_stage": 5,
    "when_missed": null
   }
